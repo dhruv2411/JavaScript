@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h3 style="text-align: center; font-weight:bold; color:red;">Calculator</h3>
+            <p style ="border-bottom: 2px solid rgba(211,211,211,0.5)"></p>
+            <input id="nums" placeholder="0">
+            <button type="button" onclick="erase()" class="btn">C</button>
+            <br>
+            <button type="button" onclick="press(1)" class="btn">1</button>
+            <button type="button" onclick="press(2)" class="btn">2</button>
+            <button type="button" onclick="press(3)" class="btn">3</button>
+            <button type="button" onclick="press('+')" class="btn">Add</button>
+            <br>
+            <button type="button" onclick="press(4)" class="btn">4</button>
+            <button type="button" onclick="press(5)" class="btn">5</button>
+            <button type="button" onclick="press(6)" class="btn">6</button>
+            <button type="button" onclick="press('-')" class="btn">Subtract</button>
+            <br>
+            <button type="button" onclick="press(7)" class="btn">7</button>
+            <button type="button" onclick="press(8)" class="btn">8</button>
+            <button type="button" onclick="press(9)" class="btn">9</button>
+            <button type="button" onclick="press('*')" class="btn">Multiply</button>
+            <br>
+            <button type="button" onclick="press(0)" class="btn">0</button>
+            <button type="button" onclick="press('.')" class="btn">.</button>    
+            <button type="button" onclick="equal('=')" class="btnEqual">=</button>        
+            <button type="button" onclick="press('/')" class="btn">Divison</button>        
+            <br>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </body>
+</html>
